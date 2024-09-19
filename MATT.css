@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+h2{
+    font-family: "Lucida Calligraphy";
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.main-header{
+    position: relative;
+    background-image: url(matt.jpg);
+    background-size: cover;
+    min-height: 605px;
+}
+
+.background-overlay{
+    position: absolute;
+    background: rgba(95, 98, 93,.3);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    align-items: center;
+}
+
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.header {
+    background: #c7a17a ;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 5px 5px 5px black;
+    opacity: .9;
+}
+
+.container2{
+    display: flex;
+}
+
+.logo {
+    font-size: 2.5em;
+    font-weight: bold;
+    width: 100%;
+}
+
+.imagen{
+    width: 30%;
+}
+
+button{
+     border: 1px #c7a17a solid;
+    background: white;
+    border-radius: 5px;
+   width: 10em;
+    height: 3em;
+    
+    background-color: #f4f4f4;
+    margin-top: 5px;
+}
+
+.btn{
+    text-decoration: none;
+    color: black;
+    
+}
+
+
+.Menú{
+    box-shadow: 0 4px 20px gray;
+    border-radius: 10px;
+}
+
+.logomatt{
+    width: 20%;
+}
+
+.nav ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    height: 400px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero h2 {
+    font-size: 3em;
+}
+
+.hero p {
+    font-size: 1.5em;
+}
+
+.about, .menu, .gallery, .contact {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.about h2, .menu h2, .gallery h2, .contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 200px;
+}
+
+.menu-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.menu-item p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+
+.contact p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.social-media a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 1.2em;
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+.social-media a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.footer {
+    background: #dac694 ;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer p {
+    font-size: 1em;
+}
+
+
+
+
+
+
+.galeria-fotos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+.foto-item {
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.foto-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.foto-item:hover img {
+    transform: scale(1.1);
+}
+
+.foto-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.foto-item:hover::before {
+    opacity: 1;
+}
+
+
+.foto-grande {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.foto-ancha {
+    grid-column: span 2;
+}
+
+.foto-alta {
+    grid-row: span 2;
+}
+.gallery{
+    
+}
+
+
+
+
+
+
+
+.lightbox {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+     top: 0;
+    left: 0;
+}
+
+.lightbox:target{
+    display: flex;
+}
+
+.lightbox .contenido{
+    position: relative;
+}
+
+.lightbox img {
+    width: 100%;
+    height: 80vh;
+    border-radius: 8px;
+}
+
+ .cerrar{
+    color: azure;
+    text-decoration: none;
+    font-size: 30px;
+    position: absolute;
+    padding: 5px 10px;
+    right: -50px;
+    background: rgba(155, 155, 155, 0.8);
+    border-radius: 5px;
+    transition: 500ms;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
