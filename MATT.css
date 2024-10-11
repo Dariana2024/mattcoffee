@@ -318,8 +318,14 @@ button{
 }
 
 
+.logomatt{
+    display: flex;
+}
 
+.imagen{
+    width: 12%;
 
+}
 
 
 
