@@ -59,6 +59,7 @@ body {
     width: 100%;
 }
 
+
 .imagen{
     width: 30%;
 }
@@ -86,9 +87,7 @@ button{
     border-radius: 10px;
 }
 
-.logomatt{
-    width: 20%;
-}
+
 
 .nav ul {
     list-style: none;
@@ -253,12 +252,9 @@ button{
 .foto-alta {
     grid-row: span 2;
 }
-.gallery{
-    
-}
 
-
-.whatsapp-button {
+       
+        .whatsapp-button {
             background-color: #25d366;
             color: white;
             border: none;
@@ -270,10 +266,9 @@ button{
             text-decoration: none;
             display: inline-block;
         }
- .whatsapp-button:hover {
+        .whatsapp-button:hover {
             background-color: #20b358;
         }
-
 
 
 
@@ -317,7 +312,6 @@ button{
     transition: 500ms;
 }
 
-
 .logomatt{
     display: flex;
 }
@@ -326,6 +320,10 @@ button{
     width: 12%;
 
 }
+
+
+
+
 
 
 
