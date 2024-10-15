@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="MATT.css">
 </head>
 <body>
-       <header class="header">
+    <header class="header">
         <div class="container" >
         <div class="container2" >
     <div class="logomatt"  > <img class=" imagen img-fluid" src="logo.png" alt="" >
@@ -58,11 +58,9 @@
         <div class="container">
             <h2>Nuestro Menú</h2>
             
-            <img class="Menú" src="images/MenuCoffee.gif" alt="" style="width: 40%"> <br>
-            <button><a href="menu/M" download="Menú" class=" btn">DESCARGAR</a></button>
+           <a href="#21"> <img class="Menú" src="images/MenuCoffee.gif" alt="" style="width: 40%"> <br> </a>
         </div>
     </section>
-
     
      <section id="gallery" class="gallery">
         <center><div class="container">
@@ -254,24 +252,13 @@
         </div>
     </div>
              
-        
-         <style>
-        .whatsapp-button {
-            background-color: #25d366;
-            color: white;
-            border: none;
-            padding: 15px 30px;
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 5px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-        }
-        .whatsapp-button:hover {
-            background-color: #20b358;
-        }
-    </style>
+     <div class="lightbox" id="21">
+        <div class="contenido">
+            <a href="#menu" class="cerrar">x</a>
+           <img src="images/MenuCoffee.gif" alt="">
+        </div>
+    </div>     
+
         
       
         
@@ -312,11 +299,26 @@
             </div>
             
         </div>
+        <br><br><br>
+ <section id="contact" class="contact">
+    <div class="container">
+      <h2>Deja tu comentario</h2>
+        <form action="functions.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea><br><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</section>
     </section>
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Matt Coffee. Todos los derechos reservados.</p>
+             <p>&copy; 2024 Yerely Argueta, Nardi Díaz, Yelsi Díaz. Todos los derechos reservados.</p>
         </div>
     </footer>
 </body>
